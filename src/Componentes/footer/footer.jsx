@@ -3,6 +3,7 @@ import github from "../../assets/redes/github.svg";
 import linkedin from "../../assets/redes/linkedin.svg";
 import twiter from "../../assets/redes/twiter.svg";
 import wp from "../../assets/redes/wp.svg";
+import style from './footer.module.css'
 
 
 function Footer() {
@@ -31,7 +32,8 @@ function Footer() {
     {
       ruta: wp,
       link:"https://wa.me/543772409159",
-      name: "whats app"
+      name: "whats app",
+      class: style.wp
     },
   ];
 
@@ -40,8 +42,8 @@ function Footer() {
       <p>Agustin Diaz Garro</p>
       <div>
       {redes.map((redes) => (
-        <a href={redes.link} target={redes.name}>
-          <img src={redes.ruta} alt="" width="25" />
+        <a href={redes.link} target={redes.name} className={redes.class}>
+          <img src={redes.ruta} alt={`${redes.name}`} width="25" />
         </a>
       ))}
       </div>

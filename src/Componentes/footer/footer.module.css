@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & div{
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .wp{
+        position: fixed;
+        bottom: 4%;
+        right: 8%;
+    }
+}
