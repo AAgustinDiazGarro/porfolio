@@ -1,6 +1,6 @@
+import style from './nav.module.css'
 
-
-function Nav() {
+function Nav({clase}) {
 
     const link = [
         {
@@ -23,7 +23,7 @@ function Nav() {
   
 
     return (
-      <nav>
+      <nav className={`${style.nav} ${clase && style.tablet}`} name='nav' >
         {link.map( link => <a href={link.href}>{link.name}</a>
         )}
       </nav>

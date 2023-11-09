@@ -68,3 +68,20 @@ button:focus-visible {
   }
 }
  */
+
+ html{
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  overflow-x: hidden;   
+  letter-spacing: 0.1rem;
+}

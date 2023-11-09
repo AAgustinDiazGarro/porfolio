@@ -52,7 +52,7 @@ function Main() {
         <hr />
         <h2>Recomendaciones</h2>
         <hr />
-        <h2>Datos de contactos</h2>
+        <h2 id="hola">Datos de contactos</h2>
         <Form/>
         <hr />
     </main>
